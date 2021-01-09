@@ -3,14 +3,10 @@ layout: article
 title: How to develop a Python script for DFT calculation job
 description: This is from my jianshu platform. 
 tags: DFT
-mode: immersive
-header:
-  theme: dark
 article_header:
   type: overlay
   theme: dark
   background_image:
-    gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
     src: assets/images/fuji400.jpg
 ---
 
