@@ -3,6 +3,7 @@ layout: article
 title: How to develop a Python script for DFT calculation job
 description: This is from my jianshu platform. 
 tags: DFT
+cover: assets/images/fuji400.jpg
 article_header:
   type: overlay
   theme: dark
