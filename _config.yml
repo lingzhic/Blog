@@ -35,10 +35,10 @@ timezone: Australia/Melbourne # see https://en.wikipedia.org/wiki/List_of_tz_dat
 ##############################
 author:
   type      : organization # "person" (default), "organization"
-  name      : Colin Cao
+  name      : Colin
   url       :
-  avatar    : #/assets/apple-touch-icon.png # path or url of avatar image (square)
-  bio       : I am an amazing person.
+  avatar    : # path or url of avatar image (square)
+  bio       : Hi, I am Colin.
   email     : lingzhicolin@gmail.com
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -48,8 +48,8 @@ author:
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
-  linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  linkedin  : collin-lingzhi-cao # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
+  github    : Colin23333 # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
