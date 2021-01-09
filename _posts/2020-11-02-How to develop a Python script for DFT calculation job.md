@@ -16,7 +16,7 @@ e.g. 要做一个convergence test，提交相同cut off energy不同k-point的�
 
 2. 写一个生成POSCAR的script pos.py，这里用python写了一个，用c也可以，完全看习惯
 
-```
+```python
 import sys
 import math
 
@@ -46,7 +46,7 @@ fout.close()
 3. 提交job的script
 在完成了POSCAR的generator之后，写另外一个script job用来调用前面的script去生成一系列的POSCAR并运行vasp程序
 
-```
+```bash
 #!/bin/bash
 
 #PBS -N GRAPHENE
@@ -100,7 +100,7 @@ qsub job 运行之后应该会得到这样的结果：
 
 然而实际上我们只需要最后下载SUMMARY这个文件就够啦
 
-```
+```python
 2.4590 1 F= -.16200431E+02 E0= -.16200431E+02 d E =-.377889E-09
 2.4595 1 F= -.16200510E+02 E0= -.16200510E+02 d E =-.160482E-08
 2.4600 1 F= -.16200576E+02 E0= -.16200576E+02 d E =-.623061E-08
@@ -136,7 +136,7 @@ qsub job 运行之后应该会得到这样的结果：
 
 2. 登陆服务器，在包含一批任务的父文件夹中touch jobsub，然后vi jobsub编写这个script
 
-```
+```bash
 #!/bin/bash
 for i in $(seq 12 1 20)
 do
