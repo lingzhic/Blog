@@ -42,4 +42,4 @@ header:
       zh-SG   : *ZH_HANS
       zh-Hant : &ZH_HANT  關於
       # @end locale config
-    url: /article.html
+    url: /articles.html
