@@ -2,7 +2,7 @@
 layout: article
 title: How to develop a Python script for DFT calculation job
 tags: DFT
-cover: assets/images/fuji400.jpg
+# cover: assets/images/fuji400.jpg
 article_header:
   type: overlay
   theme: dark
@@ -10,7 +10,6 @@ article_header:
   background_image:
     src: assets/images/fuji400.jpg
 ---
-This is an article from my jianshu platform.
 
 在上adv. metal课的时候就曾经遇到过这个问题，当然那个时候还是全靠手动去做nuclei move的锅，不过现在也会遇到这样的情况，就是我要提交一系列的任务，而这一系列的任务是有一定的规律的，目前从我遇到过的case来看，主要有两种.
 
