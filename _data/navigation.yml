@@ -12,7 +12,7 @@ header:
       zh-SG   : *ZH_HANS
       zh-Hant : &ZH_HANT  歸檔
       # @end locale config
-    url: /   # See "_layout" folder
+    url: /home.html   # See "_layout" folder
 
   - titles:
       # @start locale config
