@@ -22,7 +22,7 @@ url     : https://lingzhic.github.io # the base hostname & protocol for your sit
 baseurl : /Blog # does not include hostname
 title   : Lingzhi's Blog
 description: > # this means to ignore newlines until "Language & timezone"
-  Your Site Description
+  Lingzhi Cao's personal blog
 
 
 ## => Language and Timezone
