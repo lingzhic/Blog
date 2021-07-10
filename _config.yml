@@ -18,7 +18,7 @@
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: tomorrow-night # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : https://colin23333.github.io # the base hostname & protocol for your site e.g. https://www.someone.com
+url     : https://lingzhic.github.io # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : /Blog # does not include hostname
 title   : Lingzhi's Blog
 description: > # this means to ignore newlines until "Language & timezone"
@@ -48,8 +48,8 @@ author:
   medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
-  linkedin  : collin-lingzhi-cao # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : Colin23333 # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  linkedin  : colin-lingzhi-cao # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
+  github    : lingzhic # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
