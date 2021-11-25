@@ -10,7 +10,7 @@ Type: PMF
 
 Cannot get the accurate description of PMF profile
 
-![Untitled](2021%2011%2024%20Meeting%20with%20Peiyao%20806d795decb04008a03c3c0b6d4d430d/Untitled.png)
+![Symbolic_regression_first_trial](assets/images/Symbolic_regression_first_trial.png)
 
 ### Solutions
 
