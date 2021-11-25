@@ -2,7 +2,7 @@
 layout: article
 titles:
   # @start locale config
-  en      : &EN       About
+  en      : &EN       About me
   en-GB   : *EN
   en-US   : *EN
   en-CA   : *EN
@@ -26,13 +26,10 @@ titles:
 key: page-about
 ---
 
-![TeXt Theme](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/TeXt-home.jpg)
+Hi there! I’m a PhD candidate in the Melbourne School of Engineering, the University of Melbourne, advised by Prof XX and Dr XXX.
 
-
-Hi there! I’m a Ph.D. candidate in the Melbourne School of Engineering, the University of Melbourne, advised by Prof. XX and Dr. XXX.
-
-My research focus is on ion transporation and separation, XX, and XXs. Currently, I am working on XX project.
+My research focus is on ion transporation and separation, multi-scalesimulations, and machine learning. Currently, I am working on XX project.
 
 My background is in semiconductor photocatalyst. I received my MSc in Engineering (Materials) from the University of Melbourne in 2021.
 
-Feel free to contact me in case you have interest or questions regarding my work.
+Feel free to contact me (colawithrain@gmail.com) in case you have interest or questions regarding my work.
