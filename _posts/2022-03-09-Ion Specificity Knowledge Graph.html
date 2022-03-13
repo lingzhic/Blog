@@ -20,32 +20,19 @@
             float: left;
         }
 
-        /* #text {
+        
 
-            position: relative;
-            float: left;
-            padding: 1em;
-        } */
+        
 
-        /* div-inline{display: inline;} */
-
-
+        
 </style>
 
 </head>
 
 <body>
-
-<!-- A module that show on-click content -->
-<!-- <div class="div-inline" id="text">
-    <h1 id="eventSpanHeading"></h1>
-    <pre id="eventSpanContent"></pre>
-</div> -->
+<div id = "mynetwork"></div>
 
 
-<div class="div-inline" id = "mynetwork"></div>
-
-<!-- Javascript part -->
 <script type="text/javascript">
 
     // initialize global variables.
@@ -59,6 +46,8 @@
     // This method is responsible for drawing the graph, returns the drawn network
     function drawGraph() {
         var container = document.getElementById('mynetwork');
+        
+        
 
         // parsing and collecting nodes and edges from the python
         nodes = new vis.DataSet([{"font": {"color": "black"}, "id": "Bare ion radius (Dispersion force)", "label": "Bare ion radius (Dispersion force)", "shape": "dot", "title": "Current factor: \u003cbr\u003eBare ion radius (Dispersion force)\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003e\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eHydrated ion radius\u003cbr\u003eIon charge density", "value": 2}, {"font": {"color": "black"}, "id": "Hydrated ion radius", "label": "Hydrated ion radius", "shape": "dot", "title": "Current factor: \u003cbr\u003eHydrated ion radius\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003eBare ion radius (Dispersion force)\u003cbr\u003eIon charge density\u003cbr\u003eHydration energy\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eElectric double layer (EDL)\u003cbr\u003eFree energy (PMF) barrier (thermodynamically)", "value": 5}, {"font": {"color": "black"}, "id": "Ion charge density", "label": "Ion charge density", "shape": "dot", "title": "Current factor: \u003cbr\u003eIon charge density\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003eBare ion radius (Dispersion force)\u003cbr\u003eIon electric charge (Electrostatic force)\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eHydrated ion radius\u003cbr\u003eInterfacial water structure", "value": 4}, {"font": {"color": "black"}, "id": "Ion electric charge (Electrostatic force)", "label": "Ion electric charge (Electrostatic force)", "shape": "dot", "title": "Current factor: \u003cbr\u003eIon electric charge (Electrostatic force)\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003e\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eHydration energy\u003cbr\u003eIon charge density", "value": 2}, {"font": {"color": "black"}, "id": "Hydration energy", "label": "Hydration energy", "shape": "dot", "title": "Current factor: \u003cbr\u003eHydration energy\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003eIon electric charge (Electrostatic force)\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eHydrated ion radius\u003cbr\u003eInterfacial water structure", "value": 3}, {"font": {"color": "black"}, "id": "Interfacial water structure", "label": "Interfacial water structure", "shape": "dot", "title": "Current factor: \u003cbr\u003eInterfacial water structure\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003eElectrode hydrophobicity\u003cbr\u003eHydration energy\u003cbr\u003eIon charge density\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eElectric double layer (EDL)\u003cbr\u003eIon adsorption to electrode\u003cbr\u003eFree energy (PMF) barrier (thermodynamically)", "value": 6}, {"font": {"color": "black"}, "id": "Free energy (PMF) barrier (thermodynamically)", "label": "Free energy (PMF) barrier (thermodynamically)", "shape": "dot", "title": "Current factor: \u003cbr\u003eFree energy (PMF) barrier (thermodynamically)\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003eHydrated ion radius\u003cbr\u003eInterfacial water structure\u003cbr\u003eElectrode type\u003cbr\u003ePore size\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eIon diffusion rate\u003cbr\u003eIon adsorption to electrode", "value": 6}, {"font": {"color": "black"}, "id": "Electric double layer (EDL)", "label": "Electric double layer (EDL)", "shape": "dot", "title": "Current factor: \u003cbr\u003eElectric double layer (EDL)\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003eHydrated ion radius\u003cbr\u003eWater polarisation\u003cbr\u003eElectric field\u003cbr\u003eElectrode type\u003cbr\u003eInterfacial water structure\u003cbr\u003ePore size\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eIon diffusion rate", "value": 7}, {"font": {"color": "black"}, "id": "Ion adsorption to electrode", "label": "Ion adsorption to electrode", "shape": "dot", "title": "Current factor: \u003cbr\u003eIon adsorption to electrode\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003eInterfacial water structure\u003cbr\u003eFree energy (PMF) barrier (thermodynamically)\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eIon diffusion rate", "value": 3}, {"font": {"color": "black"}, "id": "Ion diffusion rate", "label": "Ion diffusion rate", "shape": "dot", "title": "Current factor: \u003cbr\u003eIon diffusion rate\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003eElectric double layer (EDL)\u003cbr\u003eIon adsorption to electrode\u003cbr\u003eFree energy (PMF) barrier (thermodynamically)\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003e", "value": 3}, {"font": {"color": "black"}, "id": "Pore size", "label": "Pore size", "shape": "dot", "title": "Current factor: \u003cbr\u003ePore size\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003e\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eElectric double layer (EDL)\u003cbr\u003eFree energy (PMF) barrier (thermodynamically)", "value": 2}, {"font": {"color": "black"}, "id": "Elemental composition", "label": "Elemental composition", "shape": "dot", "title": "Current factor: \u003cbr\u003eElemental composition\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003e\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eElectrode hydrophobicity\u003cbr\u003eElectrode type", "value": 2}, {"font": {"color": "black"}, "id": "Electrode type", "label": "Electrode type", "shape": "dot", "title": "Current factor: \u003cbr\u003eElectrode type\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003eElectrode hydrophobicity\u003cbr\u003eElemental composition\u003cbr\u003eCharge affinity\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eElectric double layer (EDL)\u003cbr\u003eFree energy (PMF) barrier (thermodynamically)", "value": 5}, {"font": {"color": "black"}, "id": "Electrode hydrophobicity", "label": "Electrode hydrophobicity", "shape": "dot", "title": "Current factor: \u003cbr\u003eElectrode hydrophobicity\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003eElemental composition\u003cbr\u003eFunctional groups\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eInterfacial water structure\u003cbr\u003eElectrode type", "value": 4}, {"font": {"color": "black"}, "id": "Functional groups", "label": "Functional groups", "shape": "dot", "title": "Current factor: \u003cbr\u003eFunctional groups\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003e\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eElectrode hydrophobicity\u003cbr\u003eCharge affinity", "value": 2}, {"font": {"color": "black"}, "id": "Charge affinity", "label": "Charge affinity", "shape": "dot", "title": "Current factor: \u003cbr\u003eCharge affinity\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003eFunctional groups\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eElectrode type", "value": 2}, {"font": {"color": "black"}, "id": "Electrification", "label": "Electrification", "shape": "dot", "title": "Current factor: \u003cbr\u003eElectrification\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003e\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eWater polarisation\u003cbr\u003eElectric field", "value": 2}, {"font": {"color": "black"}, "id": "Electric field", "label": "Electric field", "shape": "dot", "title": "Current factor: \u003cbr\u003eElectric field\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003eElectrification\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eElectric double layer (EDL)", "value": 2}, {"font": {"color": "black"}, "id": "Water polarisation", "label": "Water polarisation", "shape": "dot", "title": "Current factor: \u003cbr\u003eWater polarisation\u003cbr\u003e\u003cbr\u003eAffected by: \u003cbr\u003eElectrification\u003cbr\u003e\u003cbr\u003eHas influence on: \u003cbr\u003eElectric double layer (EDL)", "value": 2}]);
@@ -69,37 +58,16 @@
 
         var options = {"nodes": {"color": {"highlight": {"border": "rgba(233,139,224,1)", "background": "rgba(241,202,255,1)"}}, "font": {"size": 44}}, "edges": {"color": {"highlight": "rgba(255,194,250,1)", "inherit": false}, "smooth": false}, "physics": {"barnesHut": {"gravitationalConstant": -80000, "springLength": 250, "springConstant": 0.001}, "minVelocity": 0.75}};
         
+        
+
+        
+
         network = new vis.Network(container, data, options);
+	 
+        
 
 
-        network.on("showPopup", function (params) {
-            document.getElementById("eventSpanHeading").innerText =
-            "Current parameter is: ";
-            document.getElementById("eventSpanContent").innerText = JSON.stringify(
-            params,
-            null,
-            4
-            );
-        });
-        network.on("selectNode", function (params) {
-            console.log("selectNode Event:", params);
-        });
-        network.on("selectEdge", function (params) {
-            console.log("selectEdge Event:", params);
-        });
-        network.on("deselectNode", function (params) {
-            console.log("deselectNode Event:", params);
-        });
-        network.on("deselectEdge", function (params) {
-            console.log("deselectEdge Event:", params);
-        });
-        network.on("hoverNode", function (params) {
-            console.log("hoverNode Event:", params);
-        });
-        network.on("hoverEdge", function (params) {
-            console.log("hoverEdge Event:", params);
-        });
-
+        
 
         return network;
 
