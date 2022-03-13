@@ -12,7 +12,7 @@
 <style type="text/css">
 
         #mynetwork {
-            width: 75%;
+            width: 750px;
             height: 750px;
             background-color: #ffffff;
             border: 1px solid lightgray;
@@ -21,10 +21,13 @@
         }
 
         #text {
-        position: relative;
-        float: right;
-        padding: 1em;
+
+            position: relative;
+            float: left;
+            padding: 1em;
         }
+
+        div-inline{display: inline;}
 
 
 </style>
@@ -34,13 +37,13 @@
 <body>
 
 <!-- A module that show on-click content -->
-<div id="text">
+<div class="div-inline" id="text">
     <h1 id="eventSpanHeading"></h1>
     <pre id="eventSpanContent"></pre>
 </div>
 
 
-<div id = "mynetwork"></div>
+<div class="div-inline" id = "mynetwork"></div>
 
 <!-- Javascript part -->
 <script type="text/javascript">
