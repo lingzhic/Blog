@@ -26,7 +26,7 @@ titles:
 key: page-about
 ---
 
-Hi there! I’m a PhD candidate in the Melbourne School of Engineering, the University of Melbourne, advised by Prof XX and Dr XXX.
+Hi there! I’m Colin Cao, a PhD candidate in the Department of Mechanical Engineering, the University of Melbourne, advised by Prof XX and Dr XXX.
 
 My research focus is on ion transporation and separation, multi-scalesimulations, and machine learning. Currently, I am working on XX project.
 
